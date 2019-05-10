@@ -5,8 +5,63 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="site-header">
+        <nav class="site-navigation">
+          <ul class="site-links">
+            <li><a href="#">информация</a></li>
+            <li><a href="#">новости</a></li>
+            <li><a href="#">прайс-лист</a></li>
+            <li><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+          </ul>
+          <ul class="user-nav">
+            <li class="user-login"><a href="#">вход</a></li>
+          </ul>
+          <div class="site-logo"><img src="logo.jpeg" alt="site main logo" width="100" height="100"></div>
+        </nav>
+    </header>
+    <main>
+      <h1>Барбершоп Бородинский</h1>
+      <div class="advantages-container">
+        <h2>Наши преимущества</h2>
+        <section class="advantage">
+          <h3 class="advantage-title">Быстро</h3>
+          <p class="advantage-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый
+            обладатель стильной стрижки-минутки!
+          </p>
+        </section>
+        <section class="advantage">
+          <h3 class="advantage-title">Круто</h3>
+          <p class="advantage-description">Забудьте, как вы стриглись раньше. мы сделаем из вас звезду
+            футбола или кино! во всяком случае внешне.
+          </p>
+        </section>
+        <section class="advantage">
+          <h3 class="advantage-title">Дорого</h3>
+          <p class="advantage-description">наши мастера - профессионалы своего дела и не могут стоить дешево. 
+            К тому же, разве цена не дает определенный статус?
+          </p>
+        </section>
+      </div>
+      <section class="site-item">
+        <h2 class="site-subtitle">Новости</h2>
+        <div class="news-card">
+          <p>Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+          <time datetime="01:01:2019">11 января</time>
+        </div>
+        <div class="news-card">
+          <p>в нашей команде пополнение, борис "бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+          <time datetime="01:01:2019">11 января</time>
+        </div>
+        <a href="all_news.html" class="site-button">Все новости</a>
+      </section>
+      <section class="site-item">
+          <h2 class="site-subtitle">Фотогалерея</h2>
+          <div class="photo-container"><img src="gallery_photo1.jpg" alt="hall"></div>
+          <input type="button" value="назад">
+          <input type="button" value="вперед">
+      </section>
+    </main>
 
   </body>
 </html>
