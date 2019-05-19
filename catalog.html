@@ -34,24 +34,76 @@
     </ul>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители</legend>
+          <ul class="filters-list">
+            <li class="filters-item">
+              <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                  name="baxter-of-california" checked>Baxter 0f California
+              </label>
+            </li>
+            <li class="filters-item">
+              <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty">Mr
+                Natty
+              </label>
+            </li>
+            <li class="filters-item">
+              <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                  name="suavecito">Suavecito
+              </label>
+            </li>
+            <li class="filters-item">
+              <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                  name="malin+goetz">Malin+Goetz
+              </label>
+            </li>
+            <li class="filters-item">
+              <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="murray's"
+                  checked>Murray's
+              </label>
+            </li>
+            <li class="filters-item">
+              <label>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                  name="american-crew">American Crew
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+          <ul class="product-list">
+            <li class="product-list-item"><label><input class="visually-hidden filter-input filter-input-radio"
+                  type="radio" name="product-group" value="shaving">Бритвенные принадлежности</label></li>
+            <li class="product-list-item"><label><input class="visually-hidden filter-input filter-input-radio"
+                  type="radio" name="product-group" value="hair-care" checked>Средства для ухода</label></li>
+            <li class="product-list-item"><label><input class="visually-hidden filter-input filter-input-radio"
+                  type="radio" name="product-group" value="accessories">Аксессуары</label></li>
+          </ul>
+        </fieldset>
+        <button class="filter-button button" type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список средств для ухода</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span class="catalog-category">Набор для путешествий</span>
               <span class="catalog-item-title">«Baxter of California»</span>
-            </a>
-          </h3>
-          <p class="catalog-item-image">
-            <a href="catalog-item.html">
+            </h3>
+            <p class="catalog-item-image">
               <img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
-            </a>
-          </p>
+            </p>
+          </a>
           <p class="catalog-item-price">
             <b>2 900 ₽</b>
             <a class="button" href="#">Купить</a>
